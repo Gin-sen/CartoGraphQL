@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{F721CCA4-361A-42C0-80CF-08461078A9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{A2A2C5D6-3613-48C5-9BA9-200CF4F6824B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartoGraphQL.Api", "CartoGraphQL.Api\CartoGraphQL.Api.csproj", "{4F9E7A8E-DFCD-49E3-85D3-E42C48370867}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{1C82DD4F-66F7-410A-8B2A-4B6E8C635557}"
+	ProjectSection(SolutionItems) = preProject
+		cartographql.ui\.dockerignore = cartographql.ui\.dockerignore
+		cartographql.ui\Dockerfile = cartographql.ui\Dockerfile
+		cartographql.ui\Dockerfile.prod = cartographql.ui\Dockerfile.prod
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{08072029-A387-4D7E-B160-94152197933A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartoGraphQL.Application", "CartoGraphQL.Application\CartoGraphQL.Application.csproj", "{2F3F2C28-3E14-432F-B6FC-A054683D95CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartoGraphQL.EntityFramework", "..\CartoGraphQL.EntityFramework\CartoGraphQL.EntityFramework.csproj", "{4B0392ED-2975-4ECE-8770-F4E487582BD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F9E7A8E-DFCD-49E3-85D3-E42C48370867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9E7A8E-DFCD-49E3-85D3-E42C48370867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9E7A8E-DFCD-49E3-85D3-E42C48370867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9E7A8E-DFCD-49E3-85D3-E42C48370867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08072029-A387-4D7E-B160-94152197933A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{08072029-A387-4D7E-B160-94152197933A}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{08072029-A387-4D7E-B160-94152197933A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08072029-A387-4D7E-B160-94152197933A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3F2C28-3E14-432F-B6FC-A054683D95CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3F2C28-3E14-432F-B6FC-A054683D95CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3F2C28-3E14-432F-B6FC-A054683D95CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3F2C28-3E14-432F-B6FC-A054683D95CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0392ED-2975-4ECE-8770-F4E487582BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0392ED-2975-4ECE-8770-F4E487582BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0392ED-2975-4ECE-8770-F4E487582BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0392ED-2975-4ECE-8770-F4E487582BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F9E7A8E-DFCD-49E3-85D3-E42C48370867} = {F721CCA4-361A-42C0-80CF-08461078A9C0}
+		{2F3F2C28-3E14-432F-B6FC-A054683D95CA} = {F721CCA4-361A-42C0-80CF-08461078A9C0}
+		{4B0392ED-2975-4ECE-8770-F4E487582BD3} = {F721CCA4-361A-42C0-80CF-08461078A9C0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2480EE58-3B27-471E-A827-CA027A76FF6E}
+	EndGlobalSection
+EndGlobal

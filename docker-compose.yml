@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  cartographql.ui:
+    hostname: cartographql.ui
+    container_name: cartographql.ui
+    image: ${DOCKER_REGISTRY-}cartographqlui
+    build:
+      context: .
+      dockerfile: cartographql.ui/Dockerfile
+
+
+  cartographql.api:
+    hostname: cartographql.api
+    container_name: cartographql.api
+    image: ${DOCKER_REGISTRY-}cartographqlapi
+    build:
+      context: .
+      dockerfile: CartoGraphQL.Api/Dockerfile
+

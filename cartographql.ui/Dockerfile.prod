@@ -1,0 +1,21 @@
+FROM node:18-alpine
+WORKDIR /app
+COPY cartographql.ui/package*.json .
+COPY cartographql.ui/tsconfig*.json .
+COPY cartographql.ui/vite*.json .
+# Install packages
+RUN set -eux; \
+    # Packages to install
+    # apk add --no-cache git \
+    npm install -g vite; \
+    npm install
+COPY cartographql.ui/ .
+RUN npm run build
+
+FROM nginx:alpine
+EXPOSE 80
+WORKDIR /usr/share/nginx/html
+RUN rm -rf *
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/dist .
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

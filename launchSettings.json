@@ -1,0 +1,34 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "cartographql.api",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "serviceActions": {
+        "cartographql.api": "StartDebugging",
+        "cartographql.ui": "StartWithoutDebugging"
+      }
+    },
+    "Docker Compose Front": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "cartographql.api": "DoNotStart",
+        "cartographql.ui": "StartWithoutDebugging"
+      }
+    },
+    "Docker Compose API": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "cartographql.api",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "serviceActions": {
+        "cartographql.api": "StartDebugging",
+        "cartographql.ui": "DoNotStart"
+      }
+    }
+  }
+}
